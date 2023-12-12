@@ -1,32 +1,36 @@
-* {
-  border: 1px solid red;
+// fonts
+@import url("https://fonts.googleapis.com/css2?family=Rethink+Sans:wght@500&display=swap");
+// fonts
+
+// estilos generales
+
+// estilos generales
+
+// app
+main {
+  font-family: "Rethink Sans", sans-serif;
   margin: 0px;
   padding: 0px;
-}
-body {
-  margin: 0px;
-  padding: 0px;
-}
-main div {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
 
-  app-toolbar {
-    grid-column-start: span 3;
-    grid-row-start: span 1;
-    flex-direction: row;
+  #container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 
-    
+    app-toolbar {
+      grid-column-start: span 3;
+      grid-row-start: span 1;
+      flex-direction: row;
+    }
 
-  }
+    app-sidebar {
+      grid-column-start: span 1;
+      grid-row-start: span 1;
+    }
 
-  app-sidebar {
-    grid-column-start: span 1;
-    grid-row-start: span 1;
-  }
-
-  app-content {
-    grid-column-start: span 2;
-    grid-row-start: span 1;
+    app-content {
+      grid-column-start: span 2;
+      grid-row-start: span 1;
+    }
   }
 }
+// app

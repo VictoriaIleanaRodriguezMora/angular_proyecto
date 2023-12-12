@@ -1,13 +1,14 @@
-header nav {
-  display: flex;
-  justify-content: space-around;
-  ul {
+header {
+  border: 5px solid black;
+  padding: 1%;
+//   margin: 5px;
+  nav {
     display: flex;
     justify-content: space-around;
-    width: 50%;
-    // background-color: yellow;
+    ul {
+      display: flex;
+      justify-content: space-around;
+      width: 50%;
+    }
   }
-//   li{
-//     padding-left: 8%;
-//   }
 }
