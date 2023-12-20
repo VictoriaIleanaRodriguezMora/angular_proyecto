@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular_proyecto": {
+    "clase02_practica": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -24,7 +24,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/angular_proyecto",
+            "outputPath": "dist/clase02_practica",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "angular_proyecto:build:production"
+              "buildTarget": "clase02_practica:build:production"
             },
             "development": {
-              "buildTarget": "angular_proyecto:build:development"
+              "buildTarget": "clase02_practica:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "angular_proyecto:build"
+            "buildTarget": "clase02_practica:build"
           }
         },
         "test": {
