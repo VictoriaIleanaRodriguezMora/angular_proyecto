@@ -3,16 +3,22 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SidebarModule } from './sidebar/sidebar.module';
+import { MyCardComponent } from './components/shared/my-card/my-card.component';
+import { PageWrapperComponent } from './components/layout/page-wrapper/page-wrapper.component';
+import { ToolbarComponent } from './components/layout/toolbar/toolbar.component';
+import { SidebarComponent } from './components/layout/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MyCardComponent,
+    PageWrapperComponent,
+    ToolbarComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    SidebarModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
