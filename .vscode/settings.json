@@ -2,6 +2,7 @@
     "conventionalCommits.scopes": [
         "modules",
         "components",
-        "modules y components"
+        "modules y components",
+        "components/students"
     ]
 }
