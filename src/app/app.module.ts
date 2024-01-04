@@ -5,19 +5,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderModule } from './modules/header/header.module';
 import { SidebarModule } from './modules/sidebar/sidebar.module';
-import { StudentsComponent } from './components/students/students.component';
+import { StudentsModule } from './modules/students/students.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    StudentsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HeaderModule,
-    SidebarModule
+    SidebarModule,
+    StudentsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

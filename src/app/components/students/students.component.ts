@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './students.component.css'
 })
 export class StudentsComponent {
-
+  myFontSize = 23;
+  myFontSize2 = 25 + 'px';
+  hayError = true;
 }

@@ -1,1 +1,8 @@
-<p>students works!</p>
+<!-- Hay varias formas de usar los ng, combinando con lo que traes del .ts -->
+
+<p [ngClass]="true ? 'success' : 'error'" 
+[ngStyle]="{fontSize: myFontSize + 'px' }">students works!</p>
+
+<p [ngStyle]="{fontSize: myFontSize2 }" >students 2</p>
+
+<p [ngClass]="{ error: hayError, success: !hayError}" >students 3</p>
