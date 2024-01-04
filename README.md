@@ -15,3 +15,8 @@ Con [ngStyle] se puede asignar dinámicamente un estilo específico a un element
 <!-- Si yo intento mostrar en un componente padre, un componente hijo que no está importado en el modulo del padre, no lo voy a poder ver.
 Importo y export el componente hijo en el modulo hijo, y en el componente padre import el modulo hijo.
  -->
+
+Directivas Personaliadas 
+
+ng g directive directives/el-nombre
+

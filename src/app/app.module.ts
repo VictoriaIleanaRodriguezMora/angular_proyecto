@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { HeaderModule } from './modules/header/header.module';
 import { SidebarModule } from './modules/sidebar/sidebar.module';
 import { StudentsModule } from './modules/students/students.module';
+// import { StudentsDirective } from './directives/students.directive';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    // StudentsDirective,
   ],
   imports: [
     BrowserModule,

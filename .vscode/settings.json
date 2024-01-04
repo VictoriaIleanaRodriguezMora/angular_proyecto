@@ -3,6 +3,7 @@
         "modules",
         "components",
         "modules y components",
-        "components/students"
+        "components/students",
+        "readme, modules y components"
     ]
 }
