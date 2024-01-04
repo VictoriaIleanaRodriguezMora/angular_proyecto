@@ -1,0 +1,7 @@
+{
+    "conventionalCommits.scopes": [
+        "modules",
+        "components",
+        "modules y components"
+    ]
+}
