@@ -1,13 +1,15 @@
-import { Directive } from '@angular/core';
+import { Directive, ElementRef } from '@angular/core';
 
 @Directive({
   selector: '[appStudents]'
 })
 export class StudentsDirective {
 
-  constructor() {
+  constructor(elementRef: ElementRef) {
 
     console.log("directiva inicializada");
+    console.log("elementRef ---> ", elementRef);
+
 
   }
 
