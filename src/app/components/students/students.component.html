@@ -1,10 +1,12 @@
 <!-- Hay varias formas de usar los ng, combinando con lo que traes del .ts -->
 
-<p [ngClass]="true ? 'success' : 'error'" 
-[ngStyle]="{fontSize: myFontSize + 'px' }">students works!</p>
+<div appStudents>
 
-<p [ngStyle]="{fontSize: myFontSize2 }" >students 2</p>
+    <p [ngClass]="true ? 'success' : 'error'" [ngStyle]="{fontSize: myFontSize + 'px' }">students works!</p>
 
-<p [ngClass]="{ error: hayError, success: !hayError}" >students 3</p>
+    <p [ngStyle]="{fontSize: myFontSize2 }">students 2</p>
 
-<p [style.font-size]="size ? 'x-large' : 'smaller' " >students 4</p>
+    <p [ngClass]="{ error: hayError, success: !hayError}">students 3</p>
+
+    <p [style.font-size]="size ? 'x-large' : 'smaller' ">students 4</p>
+</div>

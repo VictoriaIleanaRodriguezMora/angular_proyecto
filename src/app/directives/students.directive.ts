@@ -5,6 +5,10 @@ import { Directive } from '@angular/core';
 })
 export class StudentsDirective {
 
-  constructor() { }
+  constructor() {
+
+    console.log("directiva inicializada");
+
+  }
 
 }
