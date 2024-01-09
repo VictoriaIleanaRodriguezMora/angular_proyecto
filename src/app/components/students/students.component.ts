@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './students.component.css'
 })
 export class StudentsComponent {
+  status: String = 'APPROVED'
   loading: Boolean = true;
   myFontSize: Number = 23;
   myFontSize2: String = 25 + 'px';

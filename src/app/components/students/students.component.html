@@ -1,4 +1,6 @@
 <!-- Hay varias formas de usar los ng, combinando con lo que traes del .ts -->
+<!-- ANGULAR 16 -->
+<p> ------------------ ANGULAR 16 ------------------ </p>
 
 <div appStudents>
 
@@ -12,7 +14,6 @@
 </div>
 
 
-<!-- ANGULAR 16 -->
 <ul>
     <li *ngFor="let student of ['Katniss', 'Triss', 'Alicia']">
         {{student}}
@@ -31,15 +32,22 @@
     <ul>
         <li *ngFor="let student2 of studentsArr4">
             {{student2}}
-        </li> 
+        </li>
     </ul>
 </ng-template>
 
+<div [ngSwitch]="status">
+    <div *ngSwitchCase="'APPROVED'">APROBADO</div>
+    <div *ngSwitchCase="'REJECTED'">RECHAZADO</div>
+    <div *ngSwitchDefault >DESCONOCIDO</div>
+</div>
 
 
-
+<p> ------------------ ANGULAR 16 ------------------ </p>
 <!-- ANGULAR 16 -->
+
 <!-- ANGULAR 17 -->
+<p> ------------------ ANGULAR 17 ------------------ </p>
 
 @if(loading){
 <div>Cargando estudiantes...</div>
@@ -51,4 +59,16 @@
 </ul>
 }
 
+@switch (status) {
+    @case ('APPROVED') {
+        APROBADO
+    }
+    @case ('REJECTED') {
+        RECHAZADO
+    }
+    @default {
+        Desconocido
+    }
+}
+<p> ------------------ ANGULAR 17 ------------------ </p>
 <!-- ANGULAR 17 -->
