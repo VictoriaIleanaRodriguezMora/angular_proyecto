@@ -13,6 +13,8 @@ export class StudentsComponent {
   size: String = 'smaller';
   studentsArr = ['Katniss', 'Triss', 'Alicia'];
   studentsArr2 = ['Tiziano', 'Tiziana', 'Tissi'];
+  studentsArr3 = ['A', 'B', 'C'];
+  studentsArr4 = ['W', 'A', 'S'];
 
 
 
