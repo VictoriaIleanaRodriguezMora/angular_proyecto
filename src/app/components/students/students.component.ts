@@ -6,9 +6,20 @@ import { Component } from '@angular/core';
   styleUrl: './students.component.css'
 })
 export class StudentsComponent {
+  loading: Boolean = true;
   myFontSize: Number = 23;
   myFontSize2: String = 25 + 'px';
   hayError: Boolean = true;
   size: String = 'smaller';
-  studentsArr = ['Katniss', 'Triss', 'Alicia']
+  studentsArr = ['Katniss', 'Triss', 'Alicia'];
+  studentsArr2 = ['Tiziano', 'Tiziana', 'Tissi'];
+
+
+
+  constructor() {
+    setTimeout( () => {
+      this.loading = false
+    }, 3000 )
+  }
+
 }

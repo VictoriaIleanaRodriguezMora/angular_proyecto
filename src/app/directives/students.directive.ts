@@ -11,6 +11,7 @@ export class StudentsDirective {
     console.log("elementRef ---> ", elementRef);
     renderer.setStyle(elementRef.nativeElement, "background-color", "yellow");
     renderer.setStyle(elementRef.nativeElement, "border-radius", "25px")
+    renderer.setStyle(elementRef.nativeElement, "font-family", "Verdana")
   }
 
 }

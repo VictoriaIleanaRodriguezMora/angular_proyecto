@@ -21,16 +21,27 @@
         {{student2}}
     </li>
 </ul>
-<div *ngIf="!studentsArr.length" >No hay estudiantes...</div>
+
+<div *ngIf="!studentsArr.length">No hay estudiantes...</div>
+
+<div *ngIf="loading; else listaEstudiantes">Cargando estudiantes...</div>
+
+<ng-template #listaEstudiantes>
+    <!-- V17 -->
+    <ul>
+        @for(student of studentsArr2; track $index) {
+        <li> {{$index}} - {{student}} </li>
+        } @empty { No hay estuDiantes... }
+    </ul>
+    <!-- V17 -->
+</ng-template>
+
+
 <!-- ANGULAR 16 -->
 <!-- ANGULAR 17 -->
 <ul>
     @for(student of studentsArr; track $index) {
-    <li>
-        {{$index}} - {{student}}
-    </li>
-    } @empty {
-    No hay estuudiantes...
-    }
+    <li> {{$index}} - {{student}} </li>
+    } @empty { No hay estudiantes... }
 </ul>
 <!-- ANGULAR 17 -->
