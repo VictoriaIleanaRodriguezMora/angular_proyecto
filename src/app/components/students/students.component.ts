@@ -18,11 +18,15 @@ export class StudentsComponent {
   studentsArr4 = ['W', 'A', 'S'];
 
 
-
   constructor() {
-    setTimeout( () => {
+    setTimeout(() => {
       this.loading = false
-    }, 3000 )
+    }, 3000)
+  }
+
+
+  toggleError() {
+    this.hayError = !this.hayError
   }
 
 }
