@@ -6,8 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './students.component.css'
 })
 export class StudentsComponent {
-  myFontSize = 23;
-  myFontSize2 = 25 + 'px';
-  hayError = true;
-  size = 'smaller';
+  myFontSize: Number = 23;
+  myFontSize2: String = 25 + 'px';
+  hayError: Boolean = true;
+  size: String = 'smaller';
+  studentsArr = ['Katniss', 'Triss', 'Alicia']
 }

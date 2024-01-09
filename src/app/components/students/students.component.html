@@ -10,3 +10,27 @@
 
     <p [style.font-size]="size ? 'x-large' : 'smaller' ">students 4</p>
 </div>
+
+
+<!-- ANGULAR 16 -->
+<ul>
+    <li *ngFor="let student of ['Katniss', 'Triss', 'Alicia']">
+        {{student}}
+    </li>
+    <li *ngFor="let student2 of studentsArr">
+        {{student2}}
+    </li>
+</ul>
+<div *ngIf="!studentsArr.length" >No hay estudiantes...</div>
+<!-- ANGULAR 16 -->
+<!-- ANGULAR 17 -->
+<ul>
+    @for(student of studentsArr; track $index) {
+    <li>
+        {{$index}} - {{student}}
+    </li>
+    } @empty {
+    No hay estuudiantes...
+    }
+</ul>
+<!-- ANGULAR 17 -->
