@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-employee-list',
@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrl: './employee-list.component.css'
 })
 export class EmployeeListComponent {
+  @Input() employees: string[] = [];  // valor por defecto de array vacio
 
 }
