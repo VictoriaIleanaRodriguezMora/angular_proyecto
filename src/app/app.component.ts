@@ -10,6 +10,10 @@ export class AppComponent {
   empleadosEnVacaciones = ["Fulano", "Mengano", "Sultano"]
   empleadosNuevos = ["Ludmila", "Sol", "Ambar"]
 
+  selectEmployeeOnVacation() {
+    console.log("Recibimos el evento de empleados en vacaciones");
+
+  }
 
   addEmployee() {
     const nombre = prompt("Ingrese el nombre");
