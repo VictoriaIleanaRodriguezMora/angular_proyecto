@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular_proyecto';
-  empleadosEnVacaciones = ["Fulano", "Mengano", "Sultano"] 
-
+  empleadosEnVacaciones = ["Fulano", "Mengano", "Sultano"]
+  empleadosNuevos = ["Ludmila", "Sol", "Ambar"]
 }
