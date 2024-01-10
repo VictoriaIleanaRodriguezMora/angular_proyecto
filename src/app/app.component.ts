@@ -9,4 +9,12 @@ export class AppComponent {
   title = 'angular_proyecto';
   empleadosEnVacaciones = ["Fulano", "Mengano", "Sultano"]
   empleadosNuevos = ["Ludmila", "Sol", "Ambar"]
+
+
+  addEmployee() {
+    const nombre = prompt("Ingrese el nombre");
+    if (nombre) {
+      this.empleadosNuevos.push(nombre);
+    }
+  }
 }
