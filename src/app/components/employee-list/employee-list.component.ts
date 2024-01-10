@@ -6,6 +6,6 @@ import { Component, Input } from '@angular/core';
   styleUrl: './employee-list.component.css'
 })
 export class EmployeeListComponent {
-  @Input() employees: string[] = [];  // valor por defecto de array vacio
+  @Input({ required: true }) employees?: string[] = [];  // valor por defecto de array vacio
 
 }
