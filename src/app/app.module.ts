@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderModule } from './modules/header/header.module';
 import { SidebarModule } from './modules/sidebar/sidebar.module';
 import { StudentsModule } from './modules/students/students.module';
+import { EmployeeListModule } from './modules/employee-list/employee-list.module';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { StudentsModule } from './modules/students/students.module';
     AppRoutingModule,
     HeaderModule,
     SidebarModule,
-    StudentsModule
+    StudentsModule,
+    EmployeeListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
