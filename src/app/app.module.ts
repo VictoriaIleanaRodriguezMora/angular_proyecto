@@ -6,6 +6,7 @@ import { HeaderModule } from './modules/header/header.module';
 import { SidebarModule } from './modules/sidebar/sidebar.module';
 import { StudentsModule } from './modules/students/students.module';
 import { EmployeeListModule } from './modules/employee-list/employee-list.module';
+import { ModalModule } from './modules/modal/modal.module';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { EmployeeListModule } from './modules/employee-list/employee-list.module
     HeaderModule,
     SidebarModule,
     StudentsModule,
-    EmployeeListModule
+    EmployeeListModule,
+    ModalModule
   ],
   providers: [],
   bootstrap: [AppComponent]
