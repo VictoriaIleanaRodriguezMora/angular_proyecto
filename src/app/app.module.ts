@@ -3,23 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderModule } from './modules/header/header.module';
-import { SidebarModule } from './modules/sidebar/sidebar.module';
-import { StudentsModule } from './modules/students/students.module';
-// import { StudentsDirective } from './directives/students.directive';
-
+import { ToolbarComponent } from './components/toolbar/toolbar.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { ContentComponent } from './components/content/content.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    // StudentsDirective,
+    ToolbarComponent,
+    SidebarComponent,
+    ContentComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    HeaderModule,
-    SidebarModule,
-    StudentsModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
