@@ -1,14 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { StudentsComponent } from '../../components/students/students.component';
-import { StudentsDirective } from '../../directives/students.directive';
-
+import { StudentsComponent } from '../../components/students/students.component'
 
 
 @NgModule({
   declarations: [StudentsComponent, StudentsDirective],
   imports: [
-    CommonModule
+    CommonModule, FormsModule
   ],
   exports: [StudentsComponent]
 })
