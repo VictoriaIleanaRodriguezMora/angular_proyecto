@@ -4,25 +4,6 @@
 
 <div appStudents>
 
-    <!-- Si yo no pongo los corchetes en [ngClass], la comunicacion sigue siendo de Padre a Hijo. Si yo no pongo los corchetes, por defecto es comunicación de Padre a Hijo  -->
-
-    <!-- Entonces cuando sí y cuando no van los corchetes? Cuando lo que yo quiero enviar al elemento es un String no hace falta ponert los [] porque por defecto el valor va a viajar como String. Pero si yo pongo los [], lo que va en las comillas, ya no es un String y pasa a ser una expresión de Js. Entonces "error", se interpreta como una variable, y como no hay una variable error en mi Clase, da error. ENtonces si quiero que vaya como un String si tendría que ponerlo así "'error'" -->
-
-    <p ngClass="error">{{nombre}}</p>
-    <p [ngClass]="'error'">{{nombre}}</p>
-
-    <!-- Si en el navegador yo cambio el valor del input, se cambia en la variable tambien -->
-    <!-- Por que estoy escuchando el valor que emite el ngModel y a la vez la variable está actualizando el input. Están enlazados ida y vuelta -->
-
-    {{nombre}}
-    <input [(ngModel)]="nombre" type="text" />
-
-
-    <!-- El input no modifica la variable, por que el enlace es de Padre a Hijo. Y el input, es hijo del componente: students.component.html -->
-    {{nombre2}}
-    <input [ngModel]="nombre2" type="text" />
-
-    <!-- Cuando al elemento se le pasa un ARGUMENTO, mediante el uso de corchetes, o el nombre de una directiva. Es SOLO EN UNA DIRECCION (ENTRADA) -->
     <p [ngClass]="true ? 'success' : 'error'" [ngStyle]="{fontSize: myFontSize + 'px' }">students works!</p>
 
     <p [ngStyle]="{fontSize: myFontSize2 }">students 2</p>
@@ -31,8 +12,7 @@
 
     <p [style.font-size]="size ? 'x-large' : 'smaller' ">students 4</p>
 
-    <!-- Escuchando en una sola DIRECCION (SALIDA). Porque el boton solo está emitiendo un evento -->
-    <button (click)="toggleError()" type="button">Alternar</button>
+<button (click)="toggleError()" type="button" >Alternar</button>
 
 </div>
 
@@ -62,7 +42,7 @@
 <div [ngSwitch]="status">
     <div *ngSwitchCase="'APPROVED'">APROBADO</div>
     <div *ngSwitchCase="'REJECTED'">RECHAZADO</div>
-    <div *ngSwitchDefault>DESCONOCIDO</div>
+    <div *ngSwitchDefault >DESCONOCIDO</div>
 </div>
 
 
@@ -83,15 +63,15 @@
 }
 
 @switch (status) {
-@case ('APPROVED') {
-APROBADO
-}
-@case ('REJECTED') {
-RECHAZADO
-}
-@default {
-Desconocido
-}
+    @case ('APPROVED') {
+        APROBADO
+    }
+    @case ('REJECTED') {
+        RECHAZADO
+    }
+    @default {
+        Desconocido
+    }
 }
 <p> ------------------ ANGULAR 17 ------------------ </p>
 <!-- ANGULAR 17 -->
