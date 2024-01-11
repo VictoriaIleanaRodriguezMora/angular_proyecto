@@ -1,6 +1,7 @@
 
 <!-- Ahora no muestra nada, por que el array employees, está vacio -->
     <button 
+    (dblclick)="deleteEmployee.emit(employ)"
     (click)="selectEmployee.emit()"
     *ngFor="let employ of employees">
         {{ employ }}

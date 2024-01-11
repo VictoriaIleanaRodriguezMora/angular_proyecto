@@ -10,9 +10,15 @@ export class AppComponent {
   empleadosEnVacaciones = ["Fulano", "Mengano", "Sultano"]
   empleadosNuevos = ["Ludmila", "Sol", "Ambar"]
 
+
+  deleteEmployeeOnVacation(nameEmployeeToDelete: string) {
+    this.empleadosEnVacaciones.filter((nameEmployee) => {
+      return nameEmployee != nameEmployeeToDelete
+    })
+  }
+
   selectEmployeeOnVacation() {
     console.log("Recibimos el evento de empleados en vacaciones");
-
   }
 
   addEmployee() {

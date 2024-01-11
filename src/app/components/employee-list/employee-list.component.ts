@@ -7,5 +7,6 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 })
 export class EmployeeListComponent {
   @Input({ required: true }) employees?: string[] = [];  // valor por defecto de array vacio
-  @Output() selectEmployee = new EventEmitter
+  @Output() selectEmployee = new EventEmitter;
+  @Output() deleteEmployee = new EventEmitter;
 }

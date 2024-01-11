@@ -3,8 +3,11 @@
 <app-students></app-students>
 
 <h2>empleadosEnVacaciones</h2>
-<app-employee-list (selectEmployee)="selectEmployeeOnVacation()"
-    [employees]="empleadosEnVacaciones"></app-employee-list>
+<app-employee-list 
+    (deleteEmployee)="deleteEmployeeOnVacation($event)"
+    (selectEmployee)="selectEmployeeOnVacation()"
+    [employees]="empleadosEnVacaciones"
+    ></app-employee-list>
 
 <h2>empleadosNuevos</h2>
 <app-employee-list [employees]="empleadosNuevos"></app-employee-list>
