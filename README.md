@@ -20,3 +20,8 @@ Directivas Personaliadas
 
 ng g directive directives/el-nombre
 
+Para usar una directiva en un componente tego que importarla en la parte de declarations del modulo. 
+
+
+
+
