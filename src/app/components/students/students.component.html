@@ -48,9 +48,8 @@
 
 <div *ngIf="!studentsArr.length">No hay estudiantes...</div>
 
-
+<!-- ejemplo -->
 <div *ngIf="loading; else listaEstudiantes"> Cargando estudiantes...</div>
-
 <ng-template #listaEstudiantes>
     <ul>
         <li *ngFor="let student2 of studentsArr4">
@@ -58,6 +57,7 @@
         </li>
     </ul>
 </ng-template>
+<!-- ejemplo -->
 
 <div [ngSwitch]="status">
     <div *ngSwitchCase="'APPROVED'">APROBADO</div>
