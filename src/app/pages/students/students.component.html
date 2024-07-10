@@ -1,1 +1,12 @@
-<p>students works!</p>
+<app-my-card>
+    <!-- de esta manera no tengo otro elemento dentro del h1 ni del parrafo -->
+    <ng-container title_card>titulo</ng-container>
+    <ng-container p_card>contenido tarjeta</ng-container>
+</app-my-card>
+
+
+<app-my-card>
+    <!-- asi lo hace el profe, no me parece la mejor forma -->
+    <h1 title_card>titulo</h1>
+    <div p_card>contenido tarjeta</div>
+</app-my-card>

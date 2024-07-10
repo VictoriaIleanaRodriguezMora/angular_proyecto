@@ -8,6 +8,8 @@ import { ToolbarModule } from './module/toolbar/toolbar.module';
 import { StudentsModule } from './module/students/students.module';
 import { PageWrapperComponent } from './layout/page-wrapper/page-wrapper.component';
 import { PageWrapperModule } from './module/page-wrapper/page-wrapper.module';
+import { MyCardComponent } from './shared/components/my-card/my-card.component';
+import { MyCardModule } from './module/my-card/my-card.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,7 @@ import { PageWrapperModule } from './module/page-wrapper/page-wrapper.module';
     SidebarModule,
     ToolbarModule,
     StudentsModule,
-    PageWrapperModule
+    PageWrapperModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
