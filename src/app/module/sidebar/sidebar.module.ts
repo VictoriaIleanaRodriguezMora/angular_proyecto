@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { SidebarComponent } from '../../layout/sidebar/sidebar.component';
 
 
-
 @NgModule({
   declarations: [SidebarComponent],
   imports: [CommonModule],

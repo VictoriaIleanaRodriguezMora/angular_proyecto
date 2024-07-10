@@ -4,8 +4,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SidebarModule } from './module/sidebar/sidebar.module';
-// import { ToolbarComponent } from './layout/toolbar/toolbar.component';
-// import { SidebarComponent } from './layout/sidebar/sidebar.component';
+import { ToolbarModule } from './module/toolbar/toolbar.module';
+import { StudentsModule } from './module/students/students.module';
+import { PageWrapperComponent } from './layout/page-wrapper/page-wrapper.component';
+import { PageWrapperModule } from './module/page-wrapper/page-wrapper.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,10 @@ import { SidebarModule } from './module/sidebar/sidebar.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SidebarModule
+    SidebarModule,
+    ToolbarModule,
+    StudentsModule,
+    PageWrapperModule
   ],
   providers: [],
   bootstrap: [AppComponent]
