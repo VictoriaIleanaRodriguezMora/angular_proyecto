@@ -1,0 +1,16 @@
+<p>students-page works!</p>
+<!-- Dentro de las comillas, va una expresión de JS -->
+<p 
+[ngClass]="false ? 'success' : 'error'"
+[ngStyle]="{fontSize: 40 + 'px'}"
+>
+    students-page works!
+</p>
+
+
+<p 
+[ngClass]="{error: hayError, success: !hayError}"
+[ngStyle]="{fontSize: myFontSize + 'px'}"
+>
+    students-page works!
+</p>
