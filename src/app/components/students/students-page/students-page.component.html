@@ -7,10 +7,13 @@
     students-page works!
 </p>
 
-
+<!-- la directiva pisa el valor del ngClass -->
 <p 
+appRounded 
 [ngClass]="{error: hayError, success: !hayError}"
 [ngStyle]="{fontSize: myFontSize + 'px'}"
 >
     students-page works!
 </p>
+
+<div appRounded>usando la directiva</div>

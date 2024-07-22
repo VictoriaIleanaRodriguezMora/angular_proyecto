@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { StudentsPageComponent } from '../../components/students/students-page/students-page.component';
-
+import { RoundedDirective } from '../../components/students/directive/rounded.directive';
 
 @NgModule({
-  declarations: [StudentsPageComponent],
+  declarations: [StudentsPageComponent, RoundedDirective],
   imports: [CommonModule],
   exports: [StudentsPageComponent],
 })
